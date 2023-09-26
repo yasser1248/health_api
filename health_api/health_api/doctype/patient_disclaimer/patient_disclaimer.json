@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PD.#####",
+ "creation": "2023-09-25 11:28:21.571332",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "column_break_6hs52",
+  "subject",
+  "section_break_tjlfs",
+  "patient_name",
+  "animal_type",
+  "column_break_nq0do",
+  "customer",
+  "section_break_jgoir",
+  "template_title",
+  "template",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_6hs52",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "section_break_tjlfs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "patient_name",
+   "fieldtype": "Link",
+   "label": "Patient Name",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "animal_type",
+   "fieldtype": "Select",
+   "label": "Animal Type",
+   "options": "\nCat\nDog\nOther"
+  },
+  {
+   "fieldname": "column_break_nq0do",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "patient_name.customer",
+   "fetch_if_empty": 1,
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "section_break_jgoir",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "template_title",
+   "fieldtype": "Link",
+   "label": "Template Title",
+   "options": "Templates"
+  },
+  {
+   "fieldname": "template",
+   "fieldtype": "Text Editor",
+   "label": "Template"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Patient Disclaimer",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-09-25 11:36:15.033752",
+ "modified_by": "Administrator",
+ "module": "Health Api",
+ "name": "Patient Disclaimer",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

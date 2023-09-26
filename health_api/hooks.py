@@ -29,7 +29,12 @@ app_license = "MIT"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {
+    "Patient Appointment" : "public/js/patient_appointment.js" ,
+    "Patient Encounter" : "public/js/patient_encounter.js" ,
+    "Patient" : "public/js/patient.js" ,
+    
+}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -117,6 +122,14 @@ app_license = "MIT"
 # Document Events
 # ---------------
 # Hook on document methods and events
+doc_events = {
+	"Patient Appointment": {
+		"validate": "health_api.override.patient_appointment_validate",
+	},
+	"Patient": {
+		"before_save": "health_api.override.patient_before_save",
+	}
+}
 
 # doc_events = {
 #	"*": {
@@ -188,26 +201,27 @@ app_license = "MIT"
 # User Data Protection
 # --------------------
 
-# user_data_fields = [
-#	{
-#		"doctype": "{doctype_1}",
-#		"filter_by": "{filter_by}",
-#		"redact_fields": ["{field_1}", "{field_2}"],
-#		"partial": 1,
-#	},
-#	{
-#		"doctype": "{doctype_2}",
-#		"filter_by": "{filter_by}",
-#		"partial": 1,
-#	},
-#	{
-#		"doctype": "{doctype_3}",
-#		"strict": False,
-#	},
-#	{
-#		"doctype": "{doctype_4}"
-#	}
-# ]
+
+user_data_fields = [
+	{
+		"doctype": "{doctype_1}",
+		"filter_by": "{filter_by}",
+		"redact_fields": ["{field_1}", "{field_2}"],
+		"partial": 1,
+	},
+	{
+		"doctype": "{doctype_2}",
+		"filter_by": "{filter_by}",
+		"partial": 1,
+	},
+	{
+		"doctype": "{doctype_3}",
+		"strict": False,
+	},
+	{
+		"doctype": "{doctype_4}"
+	}
+]
 
 # Authentication and authorization
 # --------------------------------
@@ -215,3 +229,19 @@ app_license = "MIT"
 # auth_hooks = [
 #	"health_api.auth.validate"
 # ]
+
+fixtures = [
+    {
+        "dt": ("Property Setter"),
+        "filters": [["doc_type", "in", ("Patient Appointment","Vital Signs" ,"Patient Encounter" ,"Patient" , "Appointment Type")]]
+    },
+    {
+        "dt": ("Custom Field"),
+        "filters": [["dt", "in", ("Patient Appointment","Vital Signs" ,"Patient Encounter" ,"Patient")]]
+    },
+    {
+        "dt": ("Workspace"),
+        "filters": [["name", "in", ("Clinic Ext" ,"Healthcare")]]
+    },
+
+]

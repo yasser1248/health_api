@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-25 11:42:00.458015",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "radiology_name",
+  "radiology_name_in_arabic",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "radiology_name",
+   "fieldtype": "Link",
+   "label": "Radiology Name",
+   "options": "Radiology"
+  },
+  {
+   "fetch_from": "radiology_name.radiology_name_in_arabic",
+   "fieldname": "radiology_name_in_arabic",
+   "fieldtype": "Data",
+   "label": "Radiology Name In Arabic"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-25 11:42:23.017220",
+ "modified_by": "Administrator",
+ "module": "Health Api",
+ "name": "Radiology Items",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

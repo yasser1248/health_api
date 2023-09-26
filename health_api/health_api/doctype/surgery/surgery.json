@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:surgery_name",
+ "creation": "2023-09-25 11:51:05.742268",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "surgery_name",
+  "column_break_8dcuw",
+  "surgery_name_in_arabic",
+  "section_break_u9uhh",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "surgery_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Surgery Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_8dcuw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "surgery_name_in_arabic",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Surgery Name In Arabic"
+  },
+  {
+   "fieldname": "section_break_u9uhh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-25 11:51:34.154206",
+ "modified_by": "Administrator",
+ "module": "Health Api",
+ "name": "Surgery",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
