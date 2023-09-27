@@ -1,9 +1,9 @@
 import frappe
-from erpnext.healthcare.doctype.healthcare_settings.healthcare_settings import (
+from healthcare.healthcare.doctype.healthcare_settings.healthcare_settings import (
 	get_income_account,
 	get_receivable_account,
 )
-from erpnext.healthcare.utils import get_service_item_and_practitioner_charge
+from healthcare.healthcare.utils import get_appointment_billing_item_and_rate
 from erpnext import get_company_currency
 from frappe.utils import getdate
 from frappe import _
@@ -50,7 +50,7 @@ def create_sales_invoice(doc_name):
 	)
 @frappe.whitelist()
 def get_appointment_item(appointment_doc, item):
-	details = get_service_item_and_practitioner_charge(appointment_doc)
+	details = get_appointment_billing_item_and_rate(appointment_doc)
 	# charge = appointment_doc.paid_amount or details.get("practitioner_charge")
 	charge = details.get("practitioner_charge")
 	item.item_code = details.get("service_item")
@@ -86,7 +86,7 @@ def patient_appointment_validate(doc, event):
 	if doc.invoiced == 0 :
 		total = 0
 		if doc.from_sister_clinic == 0 :
-			details = get_service_item_and_practitioner_charge(doc)
+			details = get_appointment_billing_item_and_rate(doc)
 			total += details.get("practitioner_charge")
 		if doc.appointment_type == "Surgery" and doc.surgrey :
 			total += doc.surgrey_rate

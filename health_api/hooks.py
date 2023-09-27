@@ -126,9 +126,7 @@ doc_events = {
 	"Patient Appointment": {
 		"validate": "health_api.override.patient_appointment_validate",
 	},
-	"Patient": {
-		"before_save": "health_api.override.patient_before_save",
-	}
+	
 }
 
 # doc_events = {
