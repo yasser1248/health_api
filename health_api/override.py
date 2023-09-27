@@ -93,9 +93,9 @@ def patient_appointment_validate(doc, event):
 
 		doc.paid_amount = total
 
-@frappe.whitelist()
-def patient_before_save(self,event):
-	self.sex = self.animal_sex
+# @frappe.whitelist()
+# def patient_before_save(self,event):
+# 	self.sex = self.animal_sex
 
 
 
