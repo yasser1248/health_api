@@ -1,0 +1,144 @@
+${status},$ {الحالة}
+<b>Single</b>: Results which require only a single input.|||<br>|||<b>Compound</b>: Results which require multiple event inputs.|||<br>|||<b>Descriptive</b>: Tests which have multiple result components with manual result entry.|||<br>|||<b>Grouped</b>: Test templates which are a group of other test templates.|||<br>|||<b>No Result</b>: Tests with no results,<b> Single </b>: النتائج التي تتطلب فقط إدخالًا واحدًا. ||| <br> ||| <b> المركب </b>: النتائج التي تتطلب مدخلات حدث متعددة. ||| <br> || | <b> وصفية </b>: الاختبارات التي لها مكونات نتائج متعددة مع إدخال النتيجة اليدوية. ||| <br> ||| <b> لا توجد نتيجة </b>: الاختبارات بدون نتائج
+<br><br><br>Creating Health ID <br>||| <small>Please note,<br> <br> <br> إنشاء معرف صحي <br> ||| <small> يرجى ملاحظة
+<br><br><br>Getting Health ID,<br> <br> <br> الحصول على معرف صحي
+<br><br>Searching...,<br> <br> البحث ...
+<br><br>Verifying OTP... <br>||| <small>Please note,<br> <br> التحقق من OTP ... <br> ||| <small> يرجى ملاحظة
+<br><br>Verifying...,<br> <br> التحقق ...
+Activity Duration,مدة النشاط
+Add Video Conferencing,أضف مؤتمرات الفيديو
+Admission Instructions,تعليمات دخول المرضي
+Admission Nursing Checklist Template,قالب قائمة مراجعة التمريض للمرضى الداخلي
+Alerts,تنبيهات
+Allow Booking For,السماح بالحجز ل
+Allow Video Conferencing,السماح مؤتمرات الفيديو
+Appointment Based On Check In,موعد بناء على تسجيل الوصول
+Appointment For,موعد لـ
+Authorization,صلاحية
+Billing & Accounts,الفواتير والحسابات
+Cancel Admission,إلغاء المريض الداخلي
+Cancellation Details,تفاصيل الإلغاء
+Cannot mark Inpatient Record as Discharged since there are unbilled services.,لايمكن وضع علامة خروج  على المريض الداخلى حيث انه عليه فواتير غير مدفوعة
+Checked In,تسجيل دخول
+Checked Out,تسجيل خروج
+Checking this will popup dialog for Appointment Invoicing,اظهار شاشة دفع فواتير الموعيد
+Checking this will popup to invoice appointment,اظهار شاشة دفع فواتير الموعيد
+Checklist,قائمة المهام
+Consent Management,إدارة الموافقة
+Consent Required,الموافقة المطلوبة
+Could not add conferencing to this Appointment,لا يمكن إضافة لقاء فيديو لهذا الموعد
+Create ABHA,إنشاء ABHA
+Create Nursing Tasks,إنشاء مهام التمريض
+Create Slots,إنشاء مواعيد
+Create and link a service item to be billed for Out Patient Consulting.,قم بإنشاء وربط عنصر خدمة ليتم إصداره للاستشارات الخارجية للمريض.
+Create and link the document to complete this task,إنشاء وربط المستند لإكمال هذه المهمة
+Default Google Calendar,تقويم جوجل الافتراضي
+Default duration which the task can take to complete,المدة الافتراضية التي يمكن أن تستغرقها المهمة لإكمالها
+Denied,مرفوض
+Descriptive Result,نتيجة وصفية
+Discharge Details,تفاصيل خروج المريض
+Discharge Nursing Checklist Template,قالب قائمة مراجعة التمريض خروج المريض
+Do not add Video Conferencing,لا تضيف لقاء الفيديو
+DocName,اسم المستند 
+Entered in Error,تم إدخاله عن طريق الخطأ
+External,خارجي
+Failed to fetch health Data,فشل في جلب البيانات الصحية
+For use while scheduling tele-consultations via Google Meet,للاستخدام أثناء جدولة التوافقات عن بعد عبر اجتماع جوجل
+From Sister Clinic,من عيادة شقيقة
+Gateway Name,اسم البوابة
+Generating OTP...,توليد OTP ...
+Google Calendar Required,تقويم جوجل مطلوب
+Google Meet Link,رابط اجتماع جوجل
+Granted,تم المنح
+Health ID Service,خدمة الهوية الصحية
+If checked,إذا تم فحصه
+Imaging,التصوير
+Inpatient Consulting Charge is mandatory if you are setting Inpatient Consulting Charge Item,تعتبر رسوم الاستشارات  للمرضى الداخليين إلزامية إذا كنت تقوم بتعيين عنصر رسوم الاستشارات الداخلية للمرضى الداخليين
+Internal,داخلي
+Investigations,الفحوصات
+Join video conference with {0},انضم إلى لقاء الفيديو مع {0}
+Link existing Item,ربط العنصر الحالي
+Link the Google Calendar created and Authorized by the practitioner,اربط تقويم جوجل الذي تم إنشاؤه ومصرح به من قبل الطبيب
+Log out,تسجيل خروج
+Maximum Appointments,أقصى عدد مواعيد
+Maximum Number of Appointments (Nos),الحد الأقصى لعدد المواعيد 
+Maximum appointments cannot be more than {0} in row #{1},لا يمكن أن يكون عدد المواعيد الأقصى أكثر من {0} في الصف #{1}
+New ${frm.doc.task_doctype},جديد $ {frm.doc.task_doctype}
+No Data...,لايوجد بيانات...
+Not Allowed to 'Complete' Nursing Task without linking Task Document,غير مسموح له بـ "إكمال" مهمة التمريض دون ربط مستند المهام
+Not Allowed to cancel Nursing Task with status 'Completed',غير مسموح به لإلغاء مهمة التمريض مع الحالة "مكتملة"
+Nursing Checklist Template Task,نموذج قوائم مهام التمريض
+Nursing Task cannot be 'Draft' after submission,لا يمكن أن تكون مهمة التمريض "مسودة" بعد الإعتماد
+Nursing Tasks Created,مهام التمريض التي تم إنشاؤها
+OP & IP,المرضى ( داخلي - خارجي)
+OTP Generation Failed,فشل جيل OTP
+Obese,السمنة
+Outpatient Consulting Charge is mandatory if you are setting Outpatient Consulting Charge Item,تعتبر رسوم استشارات العيادات الخارجية إلزامية إذا كنت تقوم بتعيين عنصر رسوم الاستشارات الخارجية
+Outpatient Settings,إعدادات العيادات الخارجية
+Overweight,زيادة الوزن
+Patient <b>{0}</b> is not linked to a Customer,المريض <b> {0} </b> غير مرتبط بالعميل
+Patient Consent Template,قالب موافقة المريض
+Patient already exist,المريض موجود بالفعل
+Patient already has an appointment booked for the same day!,المريض لديه بالفعل موعد تم حجزه في نفس اليوم!
+Patient already has an appointment {} booked for {} on {},المريض لديه بالفعل موعد {} تم حجزه لـ {} على {}
+Patient has fee validity till,المريض له كشف مجانى حتي
+Patient has no fee validity,المريض ليس له كشف مجانى 
+Please complete linked Nursing Tasks before submission: {},يرجى إكمال مهام التمريض المرتبطة قبل الإعتماد : {}
+Please enter {},رجاء ادخال {}
+Position In Queue,رقمك في قائمة الانتظار
+Post-Op,بعد العملية
+Post-op Nursing Checklist Template,نموذج قوائم مهام التمريض بعد العملية
+Practitioner Primary Address,عنوان الطبيب الأساسي
+Practitioner Primary Contact,التواصل الأساسي للطبيب 
+Practitioner Schedule:,جدول الطبيب:
+Practitioner Type,نوع الطبيب
+Pre-Op,قبل العملية
+Pre-op Nursing Checklist Template,نموذج قوائم مهام التمريض قبل العملية
+Primary Address and Contact,العنوان الأساسي والاتصال
+Quantity not available for the following items in warehouse {0}.,الكمية غير متوفرة للعناصر التالية في المخزن {0}.
+Radiology,الأشعة
+Ready,مستعد
+Reason for Cancellation,سبب الالغاء
+Request Date,تاريخ الطلب
+Request Name,إسم الطلب
+Requested End Time,وقت الانتهاء المطلوب
+Requested Start Time,وقت البدء المطلوب
+Resend OTP,إعادة إرسال كلمة المرور لمرة واحدة
+Schedules for {0} overlaps,جدولة الموعيد المكرره {0}
+Select,يختار
+Sending OTP...,إرسال OTP ...
+Service Unit:,وحدة الخدمة:
+Show Payment Popup,عرض شاشة الدفع
+Stock Consumption,استهلاك المخزون
+Surgery,الجراحة
+Surgery Rate,سعر الجراحة
+System will validate if a document of this type is created and linked before completing the Nursing Task - for example,سيقوم النظام بالتحقق من صحة ما إذا تم إنشاء مستند من هذا النوع وربطه قبل إكمال مهمة التمريض - على سبيل المثال
+Task Details,تفاصيل المهمة
+Task DocType,مهام المستند
+Task Doctype,مهام المستند
+Task Document Name,اسم وثيقة المهمة
+Task Duration,مدة المهمة
+Task End Time,وقت نهاية المهمة
+Task Resolution,حل المهام
+Task Schedule,جدول المهام
+Task Start Time,وقت بدء المهمة
+Template Details,تفاصيل النموذج
+The time duration before or after the event on which the Nursing Task is to be performed. The Nursing Task start time will be set based on this.,مدة الوقت قبل أو بعد الحدث الذي سيتم تنفيذ مهمة التمريض عليه. سيتم تعيين وقت بدء مهمة التمريض بناءً على هذا.
+Time Offset,إزاحة الوقت
+URI,أوري
+Underweight,نقص الوزن
+Update Status,تحديث الحالة
+Validate Nursing Checklists,التحقق من صحة قوائم مهام التمريض
+Validates all mandatory tasks in nursing checklist to be Completed before a Patient transactional event.,يتحقق من صحة جميع المهام الإلزامية في قائمة مهام التمريض ليتم الانتهاء منها قبل حدث معاملات المريض.
+Validates all mandatory tasks in nursing checklist to be Completed before a Patient transactional event. For example,يتحقق من صحة جميع المهام الإلزامية في قائمة مهام التمريض ليتم الانتهاء منها قبل حدث معاملات المريض. على سبيل المثال
+Verification Failed,فشل التحقق
+Video Conferencing disabled for group consultations,تعطيل لقاء الفيديو للمشاورات الجماعية
+Video conferencing enabled for {},تمكين لقاء الفيديو لـ {}
+While booking tele-consultation appointments via Google Meet,أثناء حجز مواعيد استجابة عن بعد عبر Google Meet
+Worksheet & Legend,أوراق العمل
+last Name,اسم العائلة
+validate_nursing_checklists,التحقق من صحة قوائم المهام
+{0},{0}
+{0} - {1},{0} - {1}
+{0} at {1},{0} في {1}
+{0} is a holiday,{0} أجازة
