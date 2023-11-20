@@ -129,8 +129,8 @@ URI,أوري
 Underweight,نقص الوزن
 Update Status,تحديث الحالة
 Validate Nursing Checklists,التحقق من صحة قوائم مهام التمريض
-Validates all mandatory tasks in nursing checklist to be Completed before a Patient transactional event.,يتحقق من صحة جميع المهام الإلزامية في قائمة مهام التمريض ليتم الانتهاء منها قبل حدث معاملات المريض.
-Validates all mandatory tasks in nursing checklist to be Completed before a Patient transactional event. For example,يتحقق من صحة جميع المهام الإلزامية في قائمة مهام التمريض ليتم الانتهاء منها قبل حدث معاملات المريض. على سبيل المثال
+all mandatory tasks in nursing checklist to be Completed before a Patient transactional event.,يتحقق من صحة جميع المهام الإلزامية في قائمة مهام التمريض ليتم الانتهاء منها قبل حدث معاملات المريض.
+all mandatory tasks in nursing checklist to be Completed before a Patient transactional event. For example,يتحقق من صحة جميع المهام الإلزامية في قائمة مهام التمريض ليتم الانتهاء منها قبل حدث معاملات المريض. على سبيل المثال
 Verification Failed,فشل التحقق
 Video Conferencing disabled for group consultations,تعطيل لقاء الفيديو للمشاورات الجماعية
 Video conferencing enabled for {},تمكين لقاء الفيديو لـ {}
@@ -142,3 +142,59 @@ validate_nursing_checklists,التحقق من صحة قوائم المهام
 {0} - {1},{0} - {1}
 {0} at {1},{0} في {1}
 {0} is a holiday,{0} أجازة
+Healthcare,الرعاية الصحية
+Select, to make the practitioner searchable with these fields,اختر لجعل الطبيب قابلا للبحث في هذه الحقول
+Discharge Ordered DateTime ,تاريخ ووقت أمر الخروج
+Schedule Discharge,الجدول الزمني للخروج
+Clinical Procedure,اجراء العمليات
+Clinical Procedures,اجراء العمليات
+list,قائمة
+Nursing Tasks,مهام التمريض
+Encounter Time,وقت الكشفية
+Encounter Date,تاريخ الكشفية
+Healthcare Practitioner (Secondary),طبيب الرعاية الصحية
+Patient Companions Details,تفاصيل
+ID Number,رقم الهوية
+Rrelative Relation,العلاقة
+Patient's Companions,المرافقين للمريض
+Discharge Notes,ملاحظات الخروج
+Discharge Date,تاريخ الخروج
+Discharge Instructions,تعليمات الخروج
+Discharged,الخروج
+Cannot mark Inpatient Record as Discharged since there are unbilled services.,لا يمكن وضع علامة على سجل المرضى الداخليين على أنه تم خروجه لوجود خدمات غير مسددة
+Expected Discharge,الخروج المتوقع
+Requesting Practitioner,الطبيب
+Healthcare Practitioner,طبيب الرعاية الصحية
+Practitioner Name,اسم الطبيب
+"If checked, a customer will be created for every Patient. Patient Invoices will be created against this Customer. You can also select existing Customer while creating a Patient. This field is checked by default.",الااا
+Healthcare Practitioner (Primary), طبيب رعاية صحية (ابتدائي) 
+Referring Practitioner,الطبيب
+Complaints,الاعراض
+Antibiotic Name,اسم الدواء
+Practitioner Schedules,جدول الطبيب
+Occupation,الاشغال
+Lab Test,فحص المختبر
+Lab Test UOM,وحدة اختبار المختبر 
+Patient Encounter,كشفية المريض
+Appointment Type,نوع الحجز
+Fee Validity,المراجعات
+Patient Appointment,حجز المريض
+Antibiotic,الادوية
+Diagnosis,الامراض
+Complaint,الاعراض
+Diagnosis Trends,اتجاهات التشخيص
+Healthcare Activity,نشاط الرعاية الصحية
+Nursing Task,مهمة التمريض
+Nursing Checklist Template,نموذج قائمة مراجعة التمريض
+Nursing,التمريض
+Rehabilitation and Physiotherapy,التأهيل والعلاج الطبيعي
+Inpatient,المرضى الداخليين
+Facility Management,ادارة الوحدات
+Patient History Settings,إعدادات تاريخ المريض
+Treatment Plan Template,نموذج خطة العلاج
+Vital Signs,الكشف المبدئي
+Practitioner Schedule,جدول الطبيب
+Clinical Procedure Template,نموذج اجراء العمليات
+Patient,مريض
+Company,المستشفى
+
