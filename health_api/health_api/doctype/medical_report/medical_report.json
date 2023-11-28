@@ -1,0 +1,247 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:name_of_patient",
+ "creation": "2023-11-21 13:37:10.159358",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hospital",
+  "name_of_patient",
+  "nationality",
+  "the_condition_was_diagnosed_by",
+  "column_break_nxrxo",
+  "date",
+  "employer_company",
+  "patient_age",
+  "section_break_vbkzf",
+  "doctor_recommendations",
+  "from",
+  "column_break_ngubt",
+  "duration_of_sick_leave",
+  "to",
+  "contact_section",
+  "doctor_mobile",
+  "column_break_prvfz",
+  "doctor_email",
+  "section_break_7m3i3",
+  "supervising__doctor",
+  "supervising__doctor_sign",
+  "column_break_ktha0",
+  "hospital_director",
+  "hospital_director_sign",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "allow_on_submit": 1,
+   "fieldname": "hospital",
+   "fieldtype": "Data",
+   "label": "Hospital"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "name_of_patient",
+   "fieldtype": "Data",
+   "label": "Name of Patient",
+   "unique": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "doctor_recommendations",
+   "fieldtype": "Data",
+   "label": "Doctor Recommendations"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "duration_of_sick_leave",
+   "fieldtype": "Int",
+   "label": "Duration of Sick Leave"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "to",
+   "fieldtype": "Date",
+   "label": "To"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "column_break_nxrxo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "employer_company",
+   "fieldtype": "Data",
+   "label": "Employer Company"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "the_condition_was_diagnosed_by",
+   "fieldtype": "Link",
+   "label": "The Condition was Diagnosed by",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "from",
+   "fieldtype": "Date",
+   "label": "From"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "section_break_7m3i3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "supervising__doctor",
+   "fieldtype": "Link",
+   "label": "Supervising  Doctor",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "supervising__doctor_sign",
+   "fieldtype": "Signature",
+   "label": "Supervising  Doctor Sign"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "column_break_ktha0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "hospital_director",
+   "fieldtype": "Link",
+   "label": "Hospital Director",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "hospital_director_sign",
+   "fieldtype": "Signature",
+   "label": "Hospital Director Sign"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Medical Report",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "section_break_vbkzf",
+   "fieldtype": "Section Break",
+   "label": "Sick Leave Details"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "column_break_ngubt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "nationality",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Nationality"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "patient_age",
+   "fieldtype": "Data",
+   "label": "Patient Age"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "contact_section",
+   "fieldtype": "Section Break",
+   "label": "Contact"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "doctor_mobile",
+   "fieldtype": "Data",
+   "label": "Doctor Mobile"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "column_break_prvfz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "doctor_email",
+   "fieldtype": "Data",
+   "label": "Doctor Email"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-21 15:34:44.017113",
+ "modified_by": "Administrator",
+ "module": "Health Api",
+ "name": "Medical Report",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Healthcare Administrator",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nursing User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

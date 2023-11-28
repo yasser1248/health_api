@@ -33,6 +33,8 @@ doctype_js = {
     "Patient Appointment" : "public/js/patient_appointment.js" ,
     "Patient Encounter" : "public/js/patient_encounter.js" ,
     "Patient" : "public/js/patient.js" ,
+	"Nursing Task":"public/js/nursing_task.js",
+    "Healthcare Settings":"public/js/healthcare_settings.js"
     
 }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
@@ -241,5 +243,9 @@ fixtures = [
         "dt": ("Workspace"),
         "filters": [["name", "in", ("Clinic Ext" ,"Healthcare")]]
     },
+	{
+		"dt" : ("DocType") ,
+		"filters" : [["name", "in", ("Healthcare Settings")]]
+	}
 
 ]

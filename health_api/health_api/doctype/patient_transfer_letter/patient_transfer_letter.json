@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:patient",
+ "creation": "2023-11-20 12:51:02.807263",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "patient",
+  "uid",
+  "from_hospital",
+  "to_hospital",
+  "column_break_wbswu",
+  "mobile",
+  "email",
+  "transfer_date",
+  "section_break_awgd7",
+  "transfer_reason",
+  "section_break_themi",
+  "doctor",
+  "doctor_sign",
+  "column_break_x2mfd",
+  "hospital_director",
+  "hospital_director_sign",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Patient",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "patient.uid",
+   "fieldname": "uid",
+   "fieldtype": "Data",
+   "label": "Patient National ID",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "transfer_date",
+   "fieldtype": "Date",
+   "label": "Transfer Date"
+  },
+  {
+   "fieldname": "transfer_reason",
+   "fieldtype": "Text",
+   "label": "Transfer Reason"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Patient Transfer Letter",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "from_hospital",
+   "fieldtype": "Data",
+   "label": "Hospital",
+   "read_only": 1
+  },
+  {
+   "fieldname": "to_hospital",
+   "fieldtype": "Data",
+   "label": "Target Hospital"
+  },
+  {
+   "fieldname": "column_break_wbswu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_awgd7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_themi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Link",
+   "label": "Doctor",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "doctor_sign",
+   "fieldtype": "Signature",
+   "label": "Doctor Sign"
+  },
+  {
+   "fieldname": "column_break_x2mfd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hospital_director",
+   "fieldtype": "Link",
+   "label": "Hospital Director",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "hospital_director_sign",
+   "fieldtype": "Signature",
+   "label": "Hospital Director Sign"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Int",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-21 10:08:15.621458",
+ "modified_by": "Administrator",
+ "module": "Health Api",
+ "name": "Patient Transfer Letter",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,243 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:name1",
+ "creation": "2023-11-19 18:08:59.334279",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "father_name",
+  "city",
+  "gender",
+  "id_number",
+  "marital_status",
+  "nationality",
+  "column_break_4mnbi",
+  "birth_date",
+  "death_date",
+  "age_of_the_deceased",
+  "religion",
+  "death_time",
+  "death_reason",
+  "section_break_gai9c",
+  "doctor",
+  "column_break_atetq",
+  "hospital_director",
+  "section_break_rmtui",
+  "doctor_sign",
+  "column_break_c27tq",
+  "hospital_director_sign",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "Patient",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "default": " ",
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City",
+   "read_only": 1
+  },
+  {
+   "fieldname": "father_name",
+   "fieldtype": "Data",
+   "label": "Father Name"
+  },
+  {
+   "default": " ",
+   "fetch_from": "name1.sex",
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "death_date",
+   "fieldtype": "Date",
+   "label": "Death Date"
+  },
+  {
+   "default": "Now",
+   "fieldname": "death_time",
+   "fieldtype": "Time",
+   "label": "Death Time"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Death Certificate",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "name1.dob",
+   "fieldname": "birth_date",
+   "fieldtype": "Date",
+   "label": "Birth Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "age_of_the_deceased",
+   "fieldtype": "Data",
+   "label": "Age of the Deceased"
+  },
+  {
+   "default": " ",
+   "fetch_from": "name1.custom_nationality",
+   "fieldname": "nationality",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Nationality",
+   "read_only": 1
+  },
+  {
+   "default": "Single",
+   "fetch_from": "name1.marital_status",
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "label": "Marital status",
+   "options": "\nSingle\nMarried\nDivorced\nWidower\nWidow",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "name1.uid",
+   "fetch_if_empty": 1,
+   "fieldname": "id_number",
+   "fieldtype": "Int",
+   "label": "ID Number",
+   "options": "ID Number",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "name1.custom_religion",
+   "fieldname": "religion",
+   "fieldtype": "Link",
+   "label": "Religion",
+   "options": "Religion",
+   "read_only": 1
+  },
+  {
+   "fieldname": "death_reason",
+   "fieldtype": "Data",
+   "label": "Death Reason"
+  },
+  {
+   "fieldname": "column_break_4mnbi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_gai9c",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Link",
+   "label": "Doctor",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "column_break_atetq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hospital_director",
+   "fieldtype": "Link",
+   "label": "Hospital Director",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "section_break_rmtui",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "doctor_sign",
+   "fieldtype": "Signature",
+   "label": "Doctor Sign"
+  },
+  {
+   "fieldname": "column_break_c27tq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hospital_director_sign",
+   "fieldtype": "Signature",
+   "label": "Hospital Director Sign"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-21 09:46:32.841894",
+ "modified_by": "Administrator",
+ "module": "Health Api",
+ "name": "Death Certificate",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Healthcare Administrator",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nursing User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

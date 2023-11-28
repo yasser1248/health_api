@@ -25,6 +25,14 @@ frappe.ui.form.on('Patient Appointment', {
 								frm.remove_custom_button('Pay');
 								frm.reload_doc();
 							}, 10);
+							// print the patient appointment on pay
+							frappe.db.get_doc("Healthcare Settings")
+								.then(doc => {
+									if (doc.enable_patient_appointment_autoprint) {
+										console.log("Checked");
+									}
+								})
+
 						},
 					})
 				}
