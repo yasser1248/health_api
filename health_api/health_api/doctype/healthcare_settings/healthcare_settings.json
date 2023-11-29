@@ -1,6 +1,6 @@
 {
  "actions": [],
- "creation": "2017-05-09 11:26:22.337760",
+ "creation": "2023-11-28 17:35:03.148425",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -378,13 +378,13 @@
    "depends_on": "eval:doc.enable_patient_appointment_autoprint == 1",
    "fieldname": "patient_appointment_print_format",
    "fieldtype": "Link",
-   "label": "Patient Appointment Print Format",
+   "label": "print format",
    "options": "Print Format"
   }
  ],
  "issingle": 1,
  "links": [],
- "modified": "2023-11-28 15:44:46.842549",
+ "modified": "2023-11-28 17:45:35.302333",
  "modified_by": "Administrator",
  "module": "Health Api",
  "name": "Healthcare Settings",

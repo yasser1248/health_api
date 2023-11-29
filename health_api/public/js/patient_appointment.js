@@ -1,6 +1,3 @@
-
-
-
 frappe.ui.form.on('Patient Appointment', {
 	refresh: function (frm) {
 		if (frm.doc.__islocal == undefined) {
@@ -30,6 +27,7 @@ frappe.ui.form.on('Patient Appointment', {
 								.then(doc => {
 									if (doc.enable_patient_appointment_autoprint) {
 										console.log("Checked");
+										load_print_page(doc.patient_appointmetn_print_format,frm.doc.name);
 									}
 								})
 
@@ -48,3 +46,63 @@ frappe.ui.form.on('Patient Appointment', {
 	},
 
 })
+
+// function load_print_page(doc_print_format,doc_name) {
+// 	const print_format =
+// 	doc_print_format;
+// 	const letter_head = 0;
+// 	const url =
+// 	  frappe.urllib.get_base_url() +
+// 	  '/printview?doctype=Patient%20Appointment&name=' +
+// 	  doc_name +
+// 	  '&trigger_print=1' +
+// 	  '&format=' +
+// 	  print_format +
+// 	  '&no_letterhead=' +
+// 	  letter_head;
+// 	const printWindow = window.open(url, 'Print');
+// 	// printWindow.addEventListener(
+// 	//   'load',
+// 	//   function () {
+// 	// 	console.log("loaded")
+// 	// 	printWindow.print();
+// 	// 	// printWindow.close();
+// 	// 	// NOTE : uncomoent this to auto closing printing window
+// 	//   },
+// 	//   true
+// 	// );
+// 	printWindow.onload = function () {
+// 		printWindow.focus();
+// 		printWindow.print();
+
+// 	}
+//   }
+
+function load_print_page(doc_print_format, doc_name) {
+    const print_format = doc_print_format;
+    const letter_head = 0;
+    const url =
+        frappe.urllib.get_base_url() +
+        '/printview?doctype=Patient%20Appointment&name=' +
+        doc_name +
+        '&trigger_print=1' +
+        '&format=' +
+        print_format +
+        '&no_letterhead=' +
+        letter_head;
+
+    // Create an invisible iframe
+    const iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    document.body.appendChild(iframe);
+
+    // Set the iframe source to the print view URL
+    iframe.src = url;
+
+    // Wait for the iframe to load and then trigger the print operation
+    iframe.onload = function () {
+        iframe.contentWindow.focus();
+        iframe.contentWindow.print();
+        document.body.removeChild(iframe); // Remove the iframe after printing
+    };
+}
