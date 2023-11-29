@@ -27,7 +27,7 @@ frappe.ui.form.on('Patient Appointment', {
 								.then(doc => {
 									if (doc.enable_patient_appointment_autoprint) {
 										console.log("Checked");
-										load_print_page(doc.patient_appointmetn_print_format,frm.doc.name);
+										load_print_page(doc.patient_appointment_print_format,frm.doc.name);
 									}
 								})
 
