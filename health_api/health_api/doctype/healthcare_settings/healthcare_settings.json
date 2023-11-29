@@ -1,6 +1,6 @@
 {
  "actions": [],
- "creation": "2023-11-28 17:35:03.148425",
+ "creation": "2023-11-29 12:53:29.027630",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -371,20 +371,21 @@
    "default": "0",
    "fieldname": "enable_patient_appointment_autoprint",
    "fieldtype": "Check",
-   "label": "Enable autoprint on patient appointment",
+   "label": "Enable Patient Appointment Autoprint",
    "options": "0"
   },
   {
    "depends_on": "eval:doc.enable_patient_appointment_autoprint == 1",
    "fieldname": "patient_appointment_print_format",
    "fieldtype": "Link",
-   "label": "print format",
+   "label": "Print Format",
+   "mandatory_depends_on": "eval:doc.enable_patient_appointment_autoprint == 1",
    "options": "Print Format"
   }
  ],
  "issingle": 1,
  "links": [],
- "modified": "2023-11-28 17:45:35.302333",
+ "modified": "2023-11-29 13:02:03.733627",
  "modified_by": "Administrator",
  "module": "Health Api",
  "name": "Healthcare Settings",
