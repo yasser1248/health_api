@@ -246,6 +246,12 @@ fixtures = [
 	{
 		"dt" : ("DocType") ,
 		"filters" : [["name", "in", ("Healthcare Settings")]]
+	},
+    {
+        "dt": ("Print Format") ,
+        "filters" : [
+            ["name" , "in" , ("Patient Appointment" , "Lab test print format 2" , "Custom Lab Test Print")]
+		]
 	}
 
 ]
