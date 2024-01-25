@@ -25,7 +25,6 @@ frappe.ui.form.on("Patient Appointment", {
               // print the patient appointment on pay
               frappe.db.get_doc("Healthcare Settings").then((doc) => {
                 if (doc.enable_patient_appointment_autoprint) {
-                  console.log("Checked");
                   load_print_page(
                     doc.patient_appointment_print_format,
                     frm.doc.name
@@ -65,6 +64,14 @@ async function load_print_page(doc_print_format, doc_name) {
     letter_head +
     "&_lang=ar";
   const printWindow = window.open(url, "Print");
+  printWindow.onload =function () {
+    printWindow.print();
+  };
+
+  // printWindow.print();
+  // printWindow.focus();
+  // console.log("Prined")
+  // printWindow.close();
   // printWindow.addEventListener(
   //   'load',
   //   function () {
@@ -75,10 +82,7 @@ async function load_print_page(doc_print_format, doc_name) {
   //   },
   //   true
   // );
-  printWindow.onload = function () {
-    printWindow.focus();
-    printWindow.print();
-  };
+
 }
 
 // function load_print_page(doc_print_format, doc_name) {
