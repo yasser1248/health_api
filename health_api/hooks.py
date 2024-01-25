@@ -233,12 +233,94 @@ user_data_fields = [
 fixtures = [
     {
         "dt": ("Property Setter"),
-        "filters": [["doc_type", "in", ("Patient Appointment","Vital Signs" ,"Patient Encounter" ,"Patient" , "Appointment Type")]]
+        "filters": [
+            ["doc_type", "in", (
+                "Patient-main-field_order",
+				"Patient Appointment-from_sister_clinic-hidden",
+				"Patient Encounter-main-field_order",
+				"Patient Appointment-main-field_order",
+				"Appointment Type-main-translated_doctype",
+				"Patient Encounter-naming_series-options",
+				"Patient Encounter-naming_series-default",
+				"Patient Appointment-naming_series-options",
+				"Patient Appointment-naming_series-default",
+				"Patient Appointment-section_break_3-hidden",
+				"Patient Appointment-procedure_template-hidden",
+				"Patient Appointment-get_procedure_from_encounter-hidden",
+				"Patient Appointment-therapy_type-hidden",
+				"Patient Appointment-therapy_plan-hidden",
+				"Patient Appointment-duration-hidden",
+				"Patient Appointment-status-in_standard_filter",
+				"Patient Appointment-status-default",
+				"Healthcare Practitioner-naming_series-options",
+				"Medical Report-supervising__doctor-fetch_from",
+				"Medical Report-doctor_email-fetch_from",
+				"Medical Report-doctor_mobile-fetch_from",
+				"Medical Report-to-default",
+				"Medical Report-from-default",
+				"Medical Report-date-default",
+				"Healthcare Practitioner-middle_name-hidden",
+				"Healthcare Practitioner-main-field_order",
+				"Employee-salutation-hidden",
+				"Employee-main-field_order",
+				"Customer-main-field_order",
+				"Clinical Procedure-notes-width",
+				"Clinical Procedure-main-field_order",
+				"Clinical Procedure-practitioner_name-hidden",
+				"Healthcare Service Unit-occupancy_status-in_standard_filter",
+				"Inpatient Record-status-in_standard_filter",
+				"Inpatient Record-main-field_order",
+				"Patient Companions Details-mobile-in_list_view",
+				"Patient Companions Details-id_number-in_list_view",
+				"Patient Companions Details-rrelative_relation-in_list_view",
+				"Patient Companions Details-name1-in_list_view",
+
+			)]]
     },
+    # {
+    #     "dt": ("Custom Field"),
+    #     "filters": [["dt", "in", ("Patient Appointment","Vital Signs" ,"Patient Encounter" ,"Patient")]]
+    # },
     {
         "dt": ("Custom Field"),
-        "filters": [["dt", "in", ("Patient Appointment","Vital Signs" ,"Patient Encounter" ,"Patient")]]
+        "filters": [
+            ["name" , "in" , (
+                "Item-custom_the_active_ingredient",
+                "Item-custom_column_break_sh8al",
+                "Item-custom_medicine_name_in_arabic",
+                "Item-custom_medicines",
+                "Issue-custom_location",
+                "Healthcare Practitioner-custom_religion",
+                "Healthcare Practitioner-custom_nationality",
+                "Employee-custom_nationality",
+                "Employee-custom_religion",
+                "Customer-custom_religion",
+                "Customer-custom_nationality",
+                "Patient-custom_nationality",
+                "Patient-custom_religion",
+                "Clinical Procedure-custom_confirm_notification2",
+                "Clinical Procedure-custom_confirm_notification1",
+                "Clinical Procedure-custom_confirm_notification",
+                "Clinical Procedure-custom_anesthesiologist",
+                "Clinical Procedure-custom_column_break_xcrug",
+                "Clinical Procedure-custom_healthcare_practitioner_secondary",
+                "Clinical Procedure-custom_column_break_5qccc",
+                "Clinical Procedure-custom_section_break_zyxo9",
+                "Inpatient Record-custom_patient_companions_details",
+                "Inpatient Record-custom_patients_companions",
+                "Patient Encounter-custom_radiology",
+                "Patient Encounter-custom_customer",
+                "Patient Appointment-inpatient_visit_charge",
+                "Patient Appointment-from_sister_clinic",
+                "Patient Appointment-surgrey_rate",
+                "Patient Appointment-surgrey",
+                "Patient Encounter-radiology",
+                "Patient Encounter-surgery",
+			)]
+            ]
     },
+
+    
     {
         "dt": ("Workspace"),
         "filters": [["name", "in", ("Clinic Ext" ,"Healthcare")]]
